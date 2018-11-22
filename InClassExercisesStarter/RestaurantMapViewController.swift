@@ -93,7 +93,6 @@ class RestaurantMapViewController: UIViewController, MKMapViewDelegate {
                 do {
                     let json = try JSON(data:response.data!)
                     print(json)
-                    // print("\(json["restaurants"][0]["name"])")
                     let arr = [0, 1, 2, 3, 4]
                     for i in arr
                     {

@@ -46,6 +46,7 @@ class MakeReservationViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         print("pressed the button")
         
+        
         let res = db.collection("reservations")
         res.document().setData(["username":a,
             "restaurant":nameTextField.text!,

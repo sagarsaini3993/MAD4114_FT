@@ -19,6 +19,8 @@ class SeeReservationsViewController: UIViewController {
     // MARK: Firebase variables
     var db:Firestore!
     
+    var name = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,18 +32,34 @@ class SeeReservationsViewController: UIViewController {
         settings.areTimestampsInSnapshotsEnabled = true
         db.settings = settings
         
+        name = UserDefaults.standard.string(forKey: "Key")!
+
+        let data = db.collection("reservations").whereField("username", isEqualTo: name)
         
-        db.collection("reservations").getDocuments() {
-            (querySnapshot, err) in
+        print("Querying database")
+        
+        data.getDocuments() {
+            (snapshot, error) in
             
-            // MARK: FB - Boilerplate code to get data from Firestore
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
-                }
+            if (error != nil) {
+                print("Error getting results from query")
+                print(error?.localizedDescription)
             }
+            else {
+                
+                var i = 0
+                repeat{
+                    // 1. Get one result from database
+                    let results = snapshot!.documents
+                    let data = results[i].data()
+                    print(data["day"]!)
+                    print(data["restaurant"]!)
+                    var nextvalue = "\(data["day"]!): " + " \(data["restaurant"]!)" + " \(data["numSeats"]!)" as! String
+                    self.textField.text.append(nextvalue)
+                    i = i+1
+                }while(i < snapshot!.count)
+            }
+            
         }
         
         

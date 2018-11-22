@@ -34,7 +34,7 @@ class JSONViewController: UIViewController {
         print("Button pressed!")
         
         let url = "https://dog.ceo/api/breeds/image/random"
-        
+
         Alamofire.request(url, method: .get, parameters: nil).responseJSON {
             (response) in
             
@@ -47,6 +47,7 @@ class JSONViewController: UIViewController {
                 
                 do {
                     let json = try JSON(data:response.data!)
+                    print(json)
                     
                     // Get the dog photo url
                     let p = json["message"].string!
@@ -59,7 +60,7 @@ class JSONViewController: UIViewController {
                     let url = URL(string: p)
                     let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
                     self.imageView.image = UIImage(data: data!)
-                    
+ 
                     
                 }
                 catch {

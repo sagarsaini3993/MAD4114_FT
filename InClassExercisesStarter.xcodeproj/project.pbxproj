@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054C0C2D21A6E1DD005E8DE5 /* SeeReservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C0C2C21A6E1DD005E8DE5 /* SeeReservationsViewController.swift */; };
+		054C0C2F21A6E287005E8DE5 /* RestaurantMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054C0C2E21A6E287005E8DE5 /* RestaurantMapViewController.swift */; };
 		057C2C3021A5D26E00221B22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C2C2F21A5D26E00221B22 /* AppDelegate.swift */; };
 		057C2C3221A5D26E00221B22 /* FirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C2C3121A5D26E00221B22 /* FirebaseViewController.swift */; };
 		057C2C3521A5D26E00221B22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057C2C3321A5D26E00221B22 /* Main.storyboard */; };
 		057C2C3721A5D26E00221B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057C2C3621A5D26E00221B22 /* Assets.xcassets */; };
 		057C2C3A21A5D26E00221B22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 057C2C3821A5D26E00221B22 /* LaunchScreen.storyboard */; };
+		0587C33421A6DC2B009A18E4 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0587C33321A6DC2B009A18E4 /* MenuTableViewController.swift */; };
+		0587C33621A6DD57009A18E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0587C33521A6DD57009A18E4 /* LoginViewController.swift */; };
+		0587C33A21A6DF75009A18E4 /* MakeReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0587C33921A6DF75009A18E4 /* MakeReservationViewController.swift */; };
 		05EB5DF621A5DA4900D9CE24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05EB5DF521A5DA4900D9CE24 /* GoogleService-Info.plist */; };
 		05EB5DF821A5E32800D9CE24 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB5DF721A5E32800D9CE24 /* MapViewController.swift */; };
 		05EB5DFA21A5E3A500D9CE24 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB5DF921A5E3A500D9CE24 /* TableViewController.swift */; };
@@ -20,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		054C0C2C21A6E1DD005E8DE5 /* SeeReservationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeReservationsViewController.swift; sourceTree = "<group>"; };
+		054C0C2E21A6E287005E8DE5 /* RestaurantMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapViewController.swift; sourceTree = "<group>"; };
 		057C2C2C21A5D26E00221B22 /* InClassExercisesStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InClassExercisesStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		057C2C2F21A5D26E00221B22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		057C2C3121A5D26E00221B22 /* FirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +34,9 @@
 		057C2C3621A5D26E00221B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		057C2C3921A5D26E00221B22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		057C2C3B21A5D26E00221B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0587C33321A6DC2B009A18E4 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = InClassExercisesStarter/MenuTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		0587C33521A6DD57009A18E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0587C33921A6DF75009A18E4 /* MakeReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeReservationViewController.swift; sourceTree = "<group>"; };
 		05EB5DF521A5DA4900D9CE24 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		05EB5DF721A5E32800D9CE24 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		05EB5DF921A5E3A500D9CE24 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +58,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		053F392B21A6CEB6001EA763 /* Example Viiew Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05FBB3B921A62876005CACC3 /* JSONViewController.swift */,
+				05EB5DF921A5E3A500D9CE24 /* TableViewController.swift */,
+				05EB5DF721A5E32800D9CE24 /* MapViewController.swift */,
+				057C2C3121A5D26E00221B22 /* FirebaseViewController.swift */,
+			);
+			path = "Example Viiew Controllers";
+			sourceTree = "<group>";
+		};
 		057C2C2321A5D26E00221B22 = {
 			isa = PBXGroup;
 			children = (
@@ -69,13 +90,15 @@
 		057C2C2E21A5D26E00221B22 /* InClassExercisesStarter */ = {
 			isa = PBXGroup;
 			children = (
+				0587C33321A6DC2B009A18E4 /* MenuTableViewController.swift */,
+				0587C33521A6DD57009A18E4 /* LoginViewController.swift */,
+				0587C33921A6DF75009A18E4 /* MakeReservationViewController.swift */,
+				054C0C2E21A6E287005E8DE5 /* RestaurantMapViewController.swift */,
+				054C0C2C21A6E1DD005E8DE5 /* SeeReservationsViewController.swift */,
+				053F392B21A6CEB6001EA763 /* Example Viiew Controllers */,
 				05EB5DF521A5DA4900D9CE24 /* GoogleService-Info.plist */,
 				057C2C2F21A5D26E00221B22 /* AppDelegate.swift */,
-				057C2C3121A5D26E00221B22 /* FirebaseViewController.swift */,
 				057C2C3321A5D26E00221B22 /* Main.storyboard */,
-				05FBB3B921A62876005CACC3 /* JSONViewController.swift */,
-				05EB5DF921A5E3A500D9CE24 /* TableViewController.swift */,
-				05EB5DF721A5E32800D9CE24 /* MapViewController.swift */,
 				057C2C3621A5D26E00221B22 /* Assets.xcassets */,
 				057C2C3821A5D26E00221B22 /* LaunchScreen.storyboard */,
 				057C2C3B21A5D26E00221B22 /* Info.plist */,
@@ -238,9 +261,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0587C33621A6DD57009A18E4 /* LoginViewController.swift in Sources */,
 				057C2C3221A5D26E00221B22 /* FirebaseViewController.swift in Sources */,
 				05EB5DF821A5E32800D9CE24 /* MapViewController.swift in Sources */,
+				0587C33421A6DC2B009A18E4 /* MenuTableViewController.swift in Sources */,
+				054C0C2F21A6E287005E8DE5 /* RestaurantMapViewController.swift in Sources */,
 				057C2C3021A5D26E00221B22 /* AppDelegate.swift in Sources */,
+				054C0C2D21A6E1DD005E8DE5 /* SeeReservationsViewController.swift in Sources */,
+				0587C33A21A6DF75009A18E4 /* MakeReservationViewController.swift in Sources */,
 				05FBB3BA21A62876005CACC3 /* JSONViewController.swift in Sources */,
 				05EB5DFA21A5E3A500D9CE24 /* TableViewController.swift in Sources */,
 			);

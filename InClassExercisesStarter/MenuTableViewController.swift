@@ -10,7 +10,7 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
 
-    var items = ["Apple", "banana"]
+    var items = ["Restaurant Map", "Make a Reservation", "Show Reservation"]
     
     
     override func viewDidLoad() {
@@ -35,7 +35,7 @@ class MenuTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = "Put restaurant name here"
+        cell.textLabel?.text = items[indexPath.row]
         return cell
     }
     
@@ -45,9 +45,22 @@ class MenuTableViewController: UITableViewController {
         
         print("Person clicked in row number: \(i)")
         
-        if (i == 1) {
-            performSegue(withIdentifier: "segueMakeReservation", sender: nil)
+        if indexPath.row == 0 {
+            let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "vc1")
+            self.navigationController?.pushViewController(vc1!, animated: true)
         }
+        if indexPath.row == 1 {
+            let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "vc2")
+            self.navigationController?.pushViewController(vc2!, animated: true)
+        }
+        if indexPath.row == 2 {
+            let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "vc2")
+            self.navigationController?.pushViewController(vc2!, animated: true)
+        }
+        
+//        if (i == 1) {
+//            performSegue(withIdentifier: "segueMakeReservation", sender: nil)
+//        }
         
     }
 

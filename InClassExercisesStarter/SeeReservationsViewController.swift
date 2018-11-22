@@ -29,6 +29,22 @@ class SeeReservationsViewController: UIViewController {
         let settings = db.settings
         settings.areTimestampsInSnapshotsEnabled = true
         db.settings = settings
+        
+        
+        db.collection("reservations").getDocuments() {
+            (querySnapshot, err) in
+            
+            // MARK: FB - Boilerplate code to get data from Firestore
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

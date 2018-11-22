@@ -49,6 +49,7 @@ class JSONViewController: UIViewController {
                     let json = try JSON(data:response.data!)
                     print(json)
                     
+                    
                     // Get the dog photo url
                     let p = json["message"].string!
                     print(p)

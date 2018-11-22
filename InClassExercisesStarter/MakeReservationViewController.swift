@@ -17,14 +17,18 @@ class MakeReservationViewController: UIViewController {
     @IBOutlet weak var dayTextField: UITextField!
     @IBOutlet weak var seatsTextField: UITextField!
     
+    @IBOutlet weak var lblResult: UILabel!
     // Mark: Firestore variables
     var db:Firestore!
-    
+    var a = ""
     
     // MARK: Default Functions
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        a = UserDefaults.standard.string(forKey: "Key")!
+        print(a)
         db = Firestore.firestore()
         
         let settings = db.settings
@@ -41,6 +45,16 @@ class MakeReservationViewController: UIViewController {
     // MARK: Actions
     @IBAction func buttonPressed(_ sender: Any) {
         print("pressed the button")
+        
+        let res = db.collection("reservations")
+        res.document().setData(["username":a,
+            "restaurant":nameTextField.text!,
+                                       "day":dayTextField.text!,
+                                       "numSeats":seatsTextField.text!
+            ])
+        lblResult.text = "Reservation successfull"
+        
+        
     }
     
     

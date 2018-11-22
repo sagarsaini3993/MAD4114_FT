@@ -46,6 +46,8 @@ class LoginViewController: UIViewController {
                 print("Email: \(user?.user.email)")
 //                self.USERNAME = (user?.user.email)!
                 
+                UserDefaults.standard.set(user?.user.email, forKey: "Key")
+                
                 // 2. So send them to screen 2!
                 self.performSegue(withIdentifier: "segueLoginSignup", sender: nil)
             }

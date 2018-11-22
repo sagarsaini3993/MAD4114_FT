@@ -54,8 +54,8 @@ class MenuTableViewController: UITableViewController {
             self.navigationController?.pushViewController(vc2!, animated: true)
         }
         if indexPath.row == 2 {
-            let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "vc2")
-            self.navigationController?.pushViewController(vc2!, animated: true)
+            let vc3 = self.storyboard?.instantiateViewController(withIdentifier: "vc3")
+            self.navigationController?.pushViewController(vc3!, animated: true)
         }
         
 //        if (i == 1) {
